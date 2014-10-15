@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_mobile_apps"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listImage"
+        android:layout_toRightOf="@+id/listImage"
+        android:text="A List item title"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listTitle"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/listImage"
+        android:maxLines="4"
+        android:text="The List item description"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
